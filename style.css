@@ -1,4 +1,4 @@
-.{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -22,7 +22,7 @@ body{
 }
 
 input{
-    width: 200px;
+    width: 270px;
     border: none;
     padding: 24px;
     margin: 10px;
@@ -129,4 +129,42 @@ button{
     100% {
       transform: translateX(1.4em)
     }
-  }
+      }
+      body.dark-mode {
+        background: linear-gradient(45deg, #121212, #3a4452); /* Darker gradient */
+        color: #ffffff; /* Light text color */
+    }
+    
+    body.dark-mode .calculator {
+        background-color: #1e1e1e; /* Dark background for calculator */
+        border: 1px solid #444; /* Darker border */
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5); /* Darker shadow */
+    }
+    
+    body.dark-mode input {
+        width: 270px;
+        border: none;
+        background: #333; /* Dark background for input */
+        color: #ffffff; /* Light text in input */
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3); /* Darker input shadow */
+    }
+    
+    body.dark-mode button {
+        background-color: #444; /* Dark button background */
+        color: #ffffff; /* Light text for buttons */
+    }
+    
+    body.dark-mode .equal {
+        background-color: #FFA500; /* Keep equal button color */
+    }
+    
+    /* Slider colors in dark mode */
+    body.dark-mode .slider {
+        background-color: #666; /* Change slider color */
+    }
+    
+    body.dark-mode .slider:before {
+        background-color: #fff; /* Change slider thumb color */
+    }
+    
+      
