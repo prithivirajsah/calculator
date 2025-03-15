@@ -9,16 +9,28 @@ arr.forEach(button => {
             string = eval(string);
             input.value = string;
         }
+
+        else if (e.target.innerHTML == 'AC'){
+            string= "";
+            input.value = string;
+        }
+
+        else if (e.target.innerHTML == 'Del'){
+            string= string.substring(0, string.length -1);
+            input.value = string;
+        }
+        
+        else{
+            string += e.target.innerHTML;
+            input.value = string;
+        }
     })
 })
 
-// Select the checkbox input for dark mode toggle
 const checkbox = document.querySelector('.switch input');
 
-// Function to toggle dark mode
 function toggleDarkMode() {
     document.body.classList.toggle('dark-mode');
 }
 
-// Event listener for the checkbox
 checkbox.addEventListener('change', toggleDarkMode);

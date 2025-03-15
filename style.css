@@ -14,7 +14,7 @@ body{
 }
 
 .calculator{
-    border: 1px solid #717377;
+    border: 5px solid #717377;
     padding: 20px;
     border-radius: 16px;
     background-color: transparent;
@@ -24,8 +24,8 @@ body{
 input{
     width: 270px;
     border: none;
-    padding: 24px;
-    margin: 10px;
+    padding: 20px;
+    margin: 30px;
     background: transparent;
     box-shadow: 0px 3px 15px rgbs(84, 84, 84, 0.1);
     font-size: 40px;
@@ -53,34 +53,31 @@ button{
     color: black;
 }
 
-/* The switch - the box around the slider */
 .switch {
     font-size: 17px;
     position: relative;
     display: inline-block;
     width: 3.5em;
     height: 2em;
-  }
+}
   
-  /* Hide default HTML checkbox */
-  .switch input {
+.switch input {
     opacity: 0;
     width: 0;
     height: 0;
-  }
+}
   
-  /* The slider */
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #223243;
-    transition: .4s;
-    border-radius: 30px;
-  }
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #223243;
+  transition: .4s;
+  border-radius: 30px;
+}
   
   .slider:before {
     position: absolute;
@@ -101,8 +98,8 @@ button{
       transform: translateX(1.5em);
     }
   
-    80% {
-      transform: translateX(-0.3em);
+  80% {
+    transform: translateX(-0.3em);
     }
   
     100% {
@@ -110,7 +107,7 @@ button{
     }
   }
   
-  .switch input:checked + .slider:before {
+ .switch input:checked + .slider:before {
     background-color: yellow;
     box-shadow: none;
     transform: translateX(1.5em);
@@ -129,42 +126,41 @@ button{
     100% {
       transform: translateX(1.4em)
     }
-      }
+    }
+
       body.dark-mode {
-        background: linear-gradient(45deg, #121212, #3a4452); /* Darker gradient */
-        color: #ffffff; /* Light text color */
+        background: linear-gradient(45deg, #121212, #3a4452);
+        color: #ffffff;
     }
     
     body.dark-mode .calculator {
-        background-color: #1e1e1e; /* Dark background for calculator */
-        border: 1px solid #444; /* Darker border */
-        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5); /* Darker shadow */
+        background-color: #1e1e1e; 
+        border: 1px solid #444; 
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5); 
     }
     
     body.dark-mode input {
         width: 270px;
         border: none;
-        background: #333; /* Dark background for input */
-        color: #ffffff; /* Light text in input */
-        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3); /* Darker input shadow */
+        background: #333;
+        background: transparent;
+        color: #ffffff; 
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
     }
     
     body.dark-mode button {
-        background-color: #444; /* Dark button background */
-        color: #ffffff; /* Light text for buttons */
+        background-color: #444; 
+        color: #ffffff;
     }
     
     body.dark-mode .equal {
-        background-color: #FFA500; /* Keep equal button color */
+        background-color: #FFA500; 
     }
     
-    /* Slider colors in dark mode */
     body.dark-mode .slider {
-        background-color: #666; /* Change slider color */
+        background-color: #666; 
     }
     
     body.dark-mode .slider:before {
-        background-color: #fff; /* Change slider thumb color */
+        background-color: #fff;
     }
-    
-      
